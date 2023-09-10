@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/HomeFragment">
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.nilesh.stocksman.fragments.HomeFragment"
+        android:label="Fragment A"
+        tools:layout="@layout/fragment_home">
+        <!-- Define any arguments or actions here -->
+    </fragment>
+    <fragment
+        android:id="@+id/watchlistfrag"
+        android:name="com.nilesh.stocksman.fragments.WatchListFragment"
+        android:label="Fragment A"
+        tools:layout="@layout/fragment_watchlist">
+        <!-- Define any arguments or actions here -->
+    </fragment>
+    <fragment
+        android:id="@+id/walletfrag"
+        android:name="com.nilesh.stocksman.fragments.WalletFragment"
+        android:label="Fragment A"
+        tools:layout="@layout/fragment_wallet">
+        <!-- Define any arguments or actions here -->
+    </fragment>
+    <fragment
+        android:id="@+id/portfrag"
+        android:name="com.nilesh.stocksman.fragments.PortfolioFragment"
+        android:label="Fragment A"
+        tools:layout="@layout/fragment_portfolio">
+        <!-- Define any arguments or actions here -->
+    </fragment>
+    <fragment
+        android:id="@+id/loginfrag"
+        android:name="com.nilesh.stocksman.fragments.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login"/>
+
+    <fragment
+        android:id="@+id/regfrag"
+        android:name="com.nilesh.stocksman.fragments.RegisterFragment"
+        android:label="Register"
+        tools:layout="@layout/fragment_register" >
+        <!-- Define any arguments or actions here -->
+    </fragment>
+    <fragment
+        android:id="@+id/settingfrag"
+        android:name="com.nilesh.stocksman.fragments.SettingsFragment"
+        android:label="settings"
+        tools:layout="@layout/fragment_settings">
+        <!-- Define any arguments or actions here -->
+    </fragment>
+    <fragment
+        android:id="@+id/transfrag"
+        android:name="com.nilesh.stocksman.fragments.TransactionFragment"
+        android:label="transactions"
+        tools:layout="@layout/fragment_transaction">
+        <!-- Define any arguments or actions here -->
+    </fragment>
+
+
+
+
+    <!-- Define actions to navigate between fragments -->
+    <action
+        android:id="@+id/toWatchlist"
+        app:destination="@id/watchlistfrag" />
+
+    <action
+        android:id="@+id/toWallet"
+        app:destination="@id/walletfrag" />
+    <action
+        android:id="@+id/toHome"
+        app:destination="@id/HomeFragment" />
+
+    <action
+        android:id="@+id/toPort"
+        app:destination="@id/portfrag" />
+    <action
+        android:id="@+id/toSet"
+        app:destination="@id/settingfrag" />
+
+    <action
+        android:id="@+id/toTrans"
+        app:destination="@id/transfrag" />
+    <action
+        android:id="@+id/toLogin"
+        app:destination="@id/loginfrag" />
+
+    <action
+        android:id="@+id/toReg"
+        app:destination="@id/regfrag" />
+
+</navigation>

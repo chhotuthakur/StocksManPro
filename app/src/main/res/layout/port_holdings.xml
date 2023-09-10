@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/portfolio_holding_item.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewStockSymbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stock Symbol" />
+
+    <TextView
+        android:id="@+id/textViewQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity" />
+
+    <TextView
+        android:id="@+id/textViewAveragePurchasePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Average Purchase Price" />
+
+    <TextView
+        android:id="@+id/textViewTotalInvestment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Investment" />
+
+    <TextView
+        android:id="@+id/textViewDatePurchased"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date Purchased" />
+</LinearLayout>
